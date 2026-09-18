@@ -31,7 +31,9 @@ constraints, SQL behaviour and migrations are part of what is under test.
 **CI/CD and tooling**
 Gradle builds with committed wrappers for reproducibility, Docker and Docker
 Compose for local infrastructure, and automated pipelines running the same
-checks locally and on CI.
+checks locally and on CI. Command-line tools built with Picocli, with documented
+exit codes and machine-readable output so they work inside a pipeline rather
+than only in a terminal.
 
 **Product engineering**
 Taking a problem from requirements through to a released application: domain
@@ -100,6 +102,7 @@ Technologies I have used to build and complete working software.
 | Backend | Spring Boot, REST APIs, JPA, Flyway |
 | Databases | PostgreSQL, Firebase |
 | Mobile | Flutter, iOS (Xcode), Android |
+| Command-line tooling | Picocli, Jackson (YAML and JSON) |
 | Testing | JUnit 5, Testcontainers |
 | Build and infrastructure | Gradle, Docker, Docker Compose |
 | Delivery | Git, CI/CD pipelines, App Store and Google Play releases |
