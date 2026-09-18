@@ -78,11 +78,19 @@ specification quality a build step rather than a review-time discussion.
 - 111 passing automated tests, driven by fixture files rather than strings in
   test code
 
-**spec-analysis-engine** — *In development*
+**[spec-analysis-engine](https://github.com/adamshahbari/spec-analysis-engine)**
 
-Graph analysis over requirement dependency structures: cycle detection,
-dependency and reachability analysis, and specification metrics. Scala 3 and
-sbt.
+Graph analysis over the requirement dependency structure of a specification.
+Requirements become nodes and references become edges, which turns questions
+about a specification into questions about a graph.
+
+- Cycle detection using Tarjan's strongly connected components, reachability,
+  transitive and reverse dependencies, dependency depth and connected components
+- Specification metrics: density, fan-in and fan-out, depth and cycle counts
+- Text, JSON and Graphviz output, all deterministic for use in a pipeline
+- Reads the same file format as `specctl`, through an adapter in its own
+  repository
+- Scala 3, sbt, 126 passing tests, built with warnings treated as errors
 
 **cross-platform-test-lab** — *In development*
 
@@ -98,13 +106,13 @@ Technologies I have used to build and complete working software.
 
 | Area | Technologies |
 |---|---|
-| Languages | Java, Dart, SQL |
+| Languages | Java, Scala, Dart, SQL |
 | Backend | Spring Boot, REST APIs, JPA, Flyway |
 | Databases | PostgreSQL, Firebase |
 | Mobile | Flutter, iOS (Xcode), Android |
 | Command-line tooling | Picocli, Jackson (YAML and JSON) |
 | Testing | JUnit 5, Testcontainers |
-| Build and infrastructure | Gradle, Docker, Docker Compose |
+| Build and infrastructure | Gradle, sbt, Docker, Docker Compose |
 | Delivery | Git, CI/CD pipelines, App Store and Google Play releases |
 | Design | UX and UI design, product design |
 
