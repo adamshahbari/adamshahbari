@@ -27,6 +27,8 @@ Android, Firebase for authentication, data and messaging.
 Unit testing with JUnit 5, and integration testing with Testcontainers against
 real PostgreSQL instances rather than in-memory substitutes — so that schema
 constraints, SQL behaviour and migrations are part of what is under test.
+Black-box REST API and browser automation with Pytest and Playwright, testing a
+deployed system from the outside.
 
 **CI/CD and tooling**
 Gradle builds with committed wrappers for reproducibility, Docker and Docker
@@ -92,11 +94,21 @@ about a specification into questions about a graph.
   repository
 - Scala 3, sbt, 126 passing tests, built with warnings treated as errors
 
-**cross-platform-test-lab** — *In development*
+**[cross-platform-test-lab](https://github.com/adamshahbari/cross-platform-test-lab)**
 
-A black-box test suite that treats the platform as a running system, covering
-the REST API and browser behaviour against a deployed environment. Python,
-Pytest and Playwright.
+A black-box test suite that treats the Engineering Specification Platform as a
+running system, testing it the way a consumer would meet it rather than from
+the inside.
+
+- 108 tests: 88 against the REST API, 20 driving a browser with Playwright
+- An API client layer and test data factories rather than raw requests in tests
+- Around half the suite is negative: rejected input, error contracts, malformed
+  requests
+- JUnit XML and HTML reports, with screenshots, videos and traces kept on
+  browser failure
+- CI starts the platform, waits for health, runs both suites and uploads the
+  evidence
+- Python, Pytest, Playwright
 
 ---
 
@@ -106,12 +118,12 @@ Technologies I have used to build and complete working software.
 
 | Area | Technologies |
 |---|---|
-| Languages | Java, Scala, Dart, SQL |
+| Languages | Java, Scala, Python, Dart, SQL |
 | Backend | Spring Boot, REST APIs, JPA, Flyway |
 | Databases | PostgreSQL, Firebase |
 | Mobile | Flutter, iOS (Xcode), Android |
 | Command-line tooling | Picocli, Jackson (YAML and JSON) |
-| Testing | JUnit 5, Testcontainers |
+| Testing | JUnit 5, Testcontainers, Pytest, Playwright |
 | Build and infrastructure | Gradle, sbt, Docker, Docker Compose |
 | Delivery | Git, CI/CD pipelines, App Store and Google Play releases |
 | Design | UX and UI design, product design |
@@ -141,6 +153,5 @@ development and not yet publicly released.
 
 ---
 
-Source for the commercial products above is private. The remaining engineering
-projects are not yet public; repositories will be published as they reach a
-releasable state.
+Source for the commercial products above is private. The engineering projects
+listed here are public.
