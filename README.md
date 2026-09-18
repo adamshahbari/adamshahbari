@@ -63,11 +63,18 @@ rather than as documents, which makes their quality mechanically checkable.
   integration tests that start a real PostgreSQL container through
   Testcontainers and exercise the HTTP layer end to end
 
-**specctl** — *In development*
+**[specctl](https://github.com/adamshahbari/specctl)**
 
-A command-line client for the specification platform, intended to make
-specification validation a build step rather than a review-time discussion.
-Java 21 and Picocli.
+A command-line tool for engineering specifications held as YAML or JSON files:
+validate, lint, compare versions and render for publication. It makes
+specification quality a build step rather than a review-time discussion.
+
+- Six commands, with machine-readable JSON output and `--exit-code` for CI
+- Reads specification versions from a running Engineering Specification
+  Platform server, so the two projects compose
+- Java 21, Picocli, Jackson, Gradle
+- 111 passing automated tests, driven by fixture files rather than strings in
+  test code
 
 **spec-analysis-engine** — *In development*
 
