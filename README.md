@@ -115,7 +115,7 @@ manage student applications and their own workflows. Released on Google Play.
 
 - [Google Play](https://play.google.com/store/apps/details?id=com.bardos.unix.partner)
 
-**Loqma** — a multi-application food ordering and delivery platform built with
+**Deertna** — a multi-application food ordering and delivery platform built with
 Flutter and Firebase. It comprises separate customer, restaurant partner and
 rider applications alongside an internal administration console, sharing a
 common set of domain, service and design-system packages. Currently in
