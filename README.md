@@ -43,7 +43,7 @@ replacing the engineering.
 
 ### Selected engineering projects
 
-**Engineering Specification Platform**
+**[Engineering Specification Platform](https://github.com/adamshahbari/engineering-spec-platform)**
 
 An internal engineering tool for authoring, versioning, reviewing and validating
 technical specifications. Specifications are held in a structured domain model
@@ -123,6 +123,6 @@ development and not yet publicly released.
 
 ---
 
-Source for the commercial products above is private. The engineering projects
-listed here are not yet public; repositories will be published as they reach a
+Source for the commercial products above is private. The remaining engineering
+projects are not yet public; repositories will be published as they reach a
 releasable state.
