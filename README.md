@@ -1,14 +1,13 @@
 ## Adam Shahbari
 
-Software engineer. I build backend services, mobile applications and the
-tooling around them — with a strong bias towards systems that are tested,
-reproducible and understandable by the next person who opens the repository.
+Software engineer working across backend services, mobile applications, testing
+and engineering tooling.
 
-My work spans the full path from data model to shipped product: relational
-schemas and REST APIs on the JVM, cross-platform mobile clients, and the test
-and delivery automation that keeps both honest. I care about correctness at the
-boundaries — migrations, API contracts, and tests that run against real
-dependencies rather than stand-ins.
+I build REST APIs on the JVM with relational databases behind them,
+cross-platform mobile clients released to the App Store and Google Play, and the
+test and delivery automation that keeps both honest. I care most about
+correctness at the boundaries — migrations, API contracts, and tests that run
+against real dependencies rather than stand-ins.
 
 ---
 
@@ -86,14 +85,16 @@ Pytest and Playwright.
 
 ### Current technology stack
 
+Technologies I have used to build and complete working software.
+
 | Area | Technologies |
 |---|---|
-| Languages | Java, Dart, Scala, Python, SQL |
+| Languages | Java, Dart, SQL |
 | Backend | Spring Boot, REST APIs, JPA, Flyway |
 | Databases | PostgreSQL, Firebase |
 | Mobile | Flutter, iOS (Xcode), Android |
-| Testing | JUnit 5, Testcontainers, Pytest |
-| Build and infrastructure | Gradle, sbt, Docker, Docker Compose |
+| Testing | JUnit 5, Testcontainers |
+| Build and infrastructure | Gradle, Docker, Docker Compose |
 | Delivery | Git, CI/CD pipelines, App Store and Google Play releases |
 | Design | UX and UI design, product design |
 
@@ -101,25 +102,27 @@ Pytest and Playwright.
 
 ### Existing product work
 
-Applications built and released under BARDOS IT SOLUTIONS LTD.
+Selected product work under BARDOS IT SOLUTIONS LTD.
 
-**UniX** — a platform connecting students with university admissions agencies.
-Released on the App Store and Google Play, with the agency-facing interface
-built into the same application on iOS.
+**UniX** — the student-facing application of a platform connecting students with
+university admissions agencies. Released on the App Store and Google Play.
 
 - [App Store](https://apps.apple.com/gb/app/unix-university-x/id6740775299)
 - [Google Play](https://play.google.com/store/apps/details?id=com.unix.com)
 
-**UniX Partner** — a dedicated agency application for managing student
-applications and agency workflows, released on Google Play.
+**UniX Partner** — the agency-facing application, used by admissions agencies to
+manage student applications and their own workflows. Released on Google Play.
 
 - [Google Play](https://play.google.com/store/apps/details?id=com.bardos.unix.partner)
 
-**Loqma** — a food ordering platform consisting of a customer application and a
-separate restaurant partner application, built on Flutter and Firebase. Both
-applications are built; the platform has not yet been released.
+**Loqma** — a multi-application food ordering and delivery platform built with
+Flutter and Firebase. It comprises separate customer, restaurant partner and
+rider applications alongside an internal administration console, sharing a
+common set of domain, service and design-system packages. Currently in
+development and not yet publicly released.
 
 ---
 
 Source for the commercial products above is private. The engineering projects
-listed here are being prepared for publication.
+listed here are not yet public; repositories will be published as they reach a
+releasable state.
